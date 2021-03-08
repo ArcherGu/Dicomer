@@ -3101,6 +3101,19 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+cornerstone-core@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/cornerstone-core/download/cornerstone-core-2.3.0.tgz#b16430b0dc3883c795fbbd5f64d0f6357f91c889"
+  integrity sha1-sWQwsNw4g8eV+71fZND2NX+RyIk=
+
+cornerstone-wado-image-loader@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.npm.taobao.org/cornerstone-wado-image-loader/download/cornerstone-wado-image-loader-3.3.1.tgz#2d37a4278f087f9ea66b98dd384c3584bd4f202b"
+  integrity sha1-LTekJ48If56ma5jdOEw1hL1PICs=
+  dependencies:
+    dicom-parser "^1.8.3"
+    pako "^1.0.10"
+
 cosmiconfig@^5.0.0:
   version "5.2.1"
   resolved "https://registry.npm.taobao.org/cosmiconfig/download/cosmiconfig-5.2.1.tgz?cache=0&sync_timestamp=1596310773001&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcosmiconfig%2Fdownload%2Fcosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
@@ -3532,6 +3545,11 @@ detective@^5.2.0:
     acorn-node "^1.6.1"
     defined "^1.0.0"
     minimist "^1.1.1"
+
+dicom-parser@^1.8.3, dicom-parser@^1.8.7:
+  version "1.8.7"
+  resolved "https://registry.npm.taobao.org/dicom-parser/download/dicom-parser-1.8.7.tgz#36df15f8b4250e56f164d8a50484c45e0a5668de"
+  integrity sha1-Nt8V+LQlDlbxZNilBITEXgpWaN4=
 
 didyoumean@^1.2.1:
   version "1.2.1"
@@ -6789,7 +6807,7 @@ p-try@^2.0.0:
   resolved "https://registry.npm.taobao.org/p-try/download/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=
 
-pako@~1.0.5:
+pako@^1.0.10, pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.npm.taobao.org/pako/download/pako-1.0.11.tgz?cache=0&sync_timestamp=1610209123970&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpako%2Fdownload%2Fpako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha1-bJWZ00DVTf05RjgCUqNXBaa5kr8=
