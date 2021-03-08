@@ -1,0 +1,36 @@
+@appBackgroundColor: #ecf5ff;
+
+#app {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: @appBackgroundColor;
+    height: 100%;
+    margin: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+        Microsoft YaHei, Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(208, 208, 208, .3);
+    border-radius: 5px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(208, 208, 208, .6);
+}

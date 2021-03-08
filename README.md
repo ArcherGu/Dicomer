@@ -1,24 +1,7 @@
-# dicomer
+<p align="center">
+    <img width="300" src="https://github.com/ArcherGu/Dicomer/blob/main/logo.png" alt="logo">
+</p>
 
-## Project setup
-```
-npm install
-```
+# Dicomer 🔍
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Dicomer is a easy DICOM browser.

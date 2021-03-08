@@ -8,6 +8,7 @@ import {
     Input,
     Tooltip,
     Divider,
+    Popover,
     Tag,
     Upload
 } from 'ant-design-vue';
@@ -21,6 +22,7 @@ const components = [
     Input,
     Tooltip,
     Divider,
+    Popover,
     Tag,
     Upload
 ];
