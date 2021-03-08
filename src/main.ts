@@ -1,6 +1,16 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router, { setupRouter } from './router';
+import { setupStore } from './store';
+import { setupAntd } from './plugins/ant';
+import './style/tailwind.css';
 
-createApp(App).use(store).use(router).mount('#app')
+const app = createApp(App);
+
+setupStore(app);
+setupRouter(app);
+setupAntd(app);
+
+router.isReady().then(() => {
+    app.mount('#app', true);
+});
