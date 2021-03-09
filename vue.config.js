@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: '/Dicomer',
     lintOnSave: false,
     productionSourceMap: false,
     chainWebpack: config => {
