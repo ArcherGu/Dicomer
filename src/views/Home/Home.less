@@ -1,0 +1,34 @@
+.home-page {
+    @headerHeight: 80px;
+    @headerLogoWidth: 270px;
+
+    .home-page-header {
+        height: @headerHeight;
+
+        .logo {
+            width: @headerLogoWidth;
+
+            img {
+                width: @headerLogoWidth - 20px;
+            }
+        }
+
+        .open-file-action {
+            .ant-upload {
+                height: 100%;
+            }
+        }
+    }
+
+    .home-page-container {
+        height: calc(100vh - @headerHeight);
+
+        .file-list-block {
+            width: @headerLogoWidth;
+        }
+
+        .image-viewer-block {
+            width: calc(100vw - @headerLogoWidth);
+        }
+    }
+}

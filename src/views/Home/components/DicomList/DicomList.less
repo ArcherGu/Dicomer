@@ -1,0 +1,33 @@
+.dicom-list {
+    .dicom-list-item {
+        height: 60px;
+        margin: 0 !important;
+
+        .dicom-name,
+        .dicom-id {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .dicom-close-btn {
+            display: none;
+            height: 60px;
+            align-items: center;
+            color: #1890ff;
+
+            .anticon {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: #ff7875;
+            }
+        }
+
+        &:hover {
+            .dicom-close-btn {
+                display: flex;
+            }
+        }
+    }
+}
