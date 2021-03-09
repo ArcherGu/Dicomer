@@ -62,13 +62,16 @@ export default defineComponent({
         });
 
         const openFile = (file: File) => {
-            const imageId = cornerstoneWADOImageLoader.wadouri.fileManager.add(
+            const imageId: string = cornerstoneWADOImageLoader.wadouri.fileManager.add(
                 file
             );
+
+            const fileIndex = Number(imageId.split(":")[1]);
 
             store.commit("dicom/add", {
                 imageId,
                 fileName: file.name,
+                fileIndex,
             } as DicomInfo);
 
             openStream.next(imageId);

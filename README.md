@@ -10,7 +10,7 @@ Dicomer is a easy DICOM browser.
 
 - [x] Open DICOM File
 - [x] Open Folder
-- [ ] File List
+- [x] DICOM List
 - [ ] Tools
   - [ ] WwwcTool
   - [ ] ZoomTool

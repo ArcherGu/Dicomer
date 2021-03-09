@@ -4,6 +4,7 @@ import router, { setupRouter } from './router';
 import { setupStore } from './store';
 import { setupAntd } from './plugins/ant';
 import { setupCornerstone } from './plugins/cornerstone';
+import './styles/index.less';
 import './styles/tailwind.css';
 
 const app = createApp(App);

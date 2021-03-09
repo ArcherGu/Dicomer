@@ -19,7 +19,7 @@
 
         <div class="home-page-container flex divide-x divide-gray-300">
             <div class="file-list-block h-full">
-
+                <DicomList />
             </div>
 
             <div class="image-viewer-block h-full">
@@ -33,16 +33,15 @@
 <script lang="ts">
 import { defineComponent, ref, watch } from "vue";
 import { cornerstone } from "@/plugins/cornerstone";
-import { ImageViewer, OpenBtn } from "./components";
-import { FolderOpenOutlined } from "@ant-design/icons-vue";
+import { ImageViewer, OpenBtn, DicomList } from "./components";
 import { useStore } from "@/store";
 
 export default defineComponent({
     name: "Main",
     components: {
+        DicomList,
         ImageViewer,
         OpenBtn,
-        FolderOpenOutlined,
     },
     props: {},
     setup(props) {

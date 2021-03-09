@@ -12,7 +12,8 @@ import {
     Tag,
     Upload,
     Dropdown,
-    Menu
+    Menu,
+    Card
 } from 'ant-design-vue';
 
 const components = [
@@ -28,7 +29,8 @@ const components = [
     Tag,
     Upload,
     Dropdown,
-    Menu
+    Menu,
+    Card
 ];
 
 const ant: Plugin = {

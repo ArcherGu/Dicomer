@@ -17,8 +17,8 @@ export const dicomModule: Module<DicomModuleTypes, AllStateTypes> = {
         add(state, data: DicomInfo | DicomInfo[]) {
             isArray(data) ? state.list.push(...(data as DicomInfo[])) : state.list.push((data as DicomInfo));
         },
-        remove(state, data: DicomInfo) {
-            const index = state.list.findIndex(e => e.imageId == data.imageId);
+        remove(state, data: DicomInfo | string) {
+            const index = state.list.findIndex(e => e.imageId == (typeof data === 'string' ? data : data.imageId));
             state.list.splice(index, 1);
         },
         clear(state) {
