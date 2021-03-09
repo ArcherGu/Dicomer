@@ -10,7 +10,9 @@ import {
     Divider,
     Popover,
     Tag,
-    Upload
+    Upload,
+    Dropdown,
+    Menu
 } from 'ant-design-vue';
 
 const components = [
@@ -24,7 +26,9 @@ const components = [
     Divider,
     Popover,
     Tag,
-    Upload
+    Upload,
+    Dropdown,
+    Menu
 ];
 
 const ant: Plugin = {

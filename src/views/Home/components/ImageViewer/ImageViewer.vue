@@ -27,6 +27,10 @@ export default defineComponent({
             cornerstone.displayImage(element, image);
         };
 
+        const clearImage = () => {
+            // TODO: clear image
+        };
+
         const windowResize = () => {
             cornerstone.resize(element, true);
         };
@@ -43,6 +47,7 @@ export default defineComponent({
         return {
             viewer,
             displayImage,
+            clearImage,
         };
     },
 });

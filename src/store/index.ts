@@ -1,19 +1,20 @@
-import { App } from 'vue';
-import { createStore } from 'vuex';
+import { App, InjectionKey } from 'vue';
+import { createStore, Store, useStore as baseUseStore } from 'vuex';
+import { dicomModule } from './dicom';
+import { AllStateTypes } from './types';
 
-const store = createStore({
-    state: {
-    },
-    mutations: {
-    },
-    actions: {
-    },
+export const store = createStore<AllStateTypes>({
     modules: {
+        dicom: dicomModule,
     }
 });
 
-export function setupStore(app: App) {
-    app.use(store);
+export const key: InjectionKey<Store<AllStateTypes>> = Symbol('vue-store');
+
+export function useStore() {
+    return baseUseStore(key);
 }
 
-export default store;
+export function setupStore(app: App) {
+    app.use(store, key);
+};

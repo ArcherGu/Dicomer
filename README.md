@@ -9,7 +9,7 @@ Dicomer is a easy DICOM browser.
 ## Features
 
 - [x] Open DICOM File
-- [ ] Open Folder
+- [x] Open Folder
 - [ ] File List
 - [ ] Tools
   - [ ] WwwcTool

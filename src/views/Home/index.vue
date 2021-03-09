@@ -9,20 +9,7 @@
             </div>
 
             <div class="header-item open-file-action flex justify-center">
-                <a-upload
-                    :before-upload="openFile"
-                    :show-upload-list="false"
-                >
-                    <a-tooltip placement="bottom">
-                        <template #title>Open DICOM File</template>
-                        <a-button
-                            type="link"
-                            class="h-full"
-                        >
-                            <FolderOpenOutlined class="text-4xl" />
-                        </a-button>
-                    </a-tooltip>
-                </a-upload>
+                <OpenBtn />
             </div>
 
             <div class="header-item">
@@ -44,36 +31,39 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
-import { cornerstone, cornerstoneWADOImageLoader } from "@/plugins/cornerstone";
-import { ImageViewer } from "./components";
+import { defineComponent, ref, watch } from "vue";
+import { cornerstone } from "@/plugins/cornerstone";
+import { ImageViewer, OpenBtn } from "./components";
 import { FolderOpenOutlined } from "@ant-design/icons-vue";
+import { useStore } from "@/store";
 
 export default defineComponent({
     name: "Main",
     components: {
         ImageViewer,
+        OpenBtn,
         FolderOpenOutlined,
     },
     props: {},
     setup(props) {
+        const store = useStore();
         const imageViewer = ref<any>(null);
 
-        const openFile = (file: File) => {
-            const imageId = cornerstoneWADOImageLoader.wadouri.fileManager.add(
-                file
-            );
+        const changeImage = (imageId: string | null) => {
+            if (!imageId) {
+                imageViewer.value.clearImage();
+                return;
+            }
 
-            cornerstone.loadImage(imageId).then((image: any) => {
+            cornerstone.loadAndCacheImage(imageId).then((image: any) => {
                 imageViewer.value.displayImage(image);
             });
-
-            return false;
         };
+
+        watch(() => store.getters["dicom/currentId"], changeImage);
 
         return {
             imageViewer,
-            openFile,
         };
     },
 });
