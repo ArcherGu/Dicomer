@@ -12,7 +12,7 @@ Dicomer is a easy DICOM browser.
 - [x] Open Folder
 - [x] DICOM List
 - [ ] Tools
-  - [ ] WwwcTool
+  - [x] WwwcTool
   - [ ] ZoomTool
   - [ ] PanTool
   - [ ] RotateTool
@@ -25,4 +25,4 @@ Dicomer is a easy DICOM browser.
   - [ ] FreehandRoiTool
   - [ ] TextMarkerTool
         more...
-- [ ] 3D Coordinate
+- [x] 3D Coordinate

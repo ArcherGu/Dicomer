@@ -851,6 +851,13 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
+"@babel/runtime@7.1.2":
+  version "7.1.2"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.1.2.tgz#81c89935f4647706fc54541145e6b4ecfef4b8e3"
+  integrity sha1-gciZNfRkdwb8VFQRRea07P70uOM=
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.0", "@babel/runtime@^7.8.4":
   version "7.13.9"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.13.9.tgz#97dbe2116e2630c489f22e0656decd60aaa1fcee"
@@ -3116,6 +3123,24 @@ cornerstone-core@^2.3.0:
   resolved "https://registry.npm.taobao.org/cornerstone-core/download/cornerstone-core-2.3.0.tgz#b16430b0dc3883c795fbbd5f64d0f6357f91c889"
   integrity sha1-sWQwsNw4g8eV+71fZND2NX+RyIk=
 
+cornerstone-math@0.1.7:
+  version "0.1.7"
+  resolved "https://registry.npm.taobao.org/cornerstone-math/download/cornerstone-math-0.1.7.tgz#7c55536f02e7221b05fc49a4c780bb82c234ce39"
+  integrity sha1-fFVTbwLnIhsF/Emkx4C7gsI0zjk=
+
+cornerstone-math@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.npm.taobao.org/cornerstone-math/download/cornerstone-math-0.1.9.tgz#7ce5509e8b9f465b01f7c548470725e7569859fc"
+  integrity sha1-fOVQnoufRlsB98VIRwcl51aYWfw=
+
+cornerstone-tools@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.npm.taobao.org/cornerstone-tools/download/cornerstone-tools-5.1.3.tgz#ffb552b04dfd3bcd537fdb03ae4c4d769e592dc8"
+  integrity sha1-/7VSsE39O81Tf9sDrkxNdp5ZLcg=
+  dependencies:
+    "@babel/runtime" "7.1.2"
+    cornerstone-math "0.1.7"
+
 cornerstone-wado-image-loader@^3.3.1:
   version "3.3.1"
   resolved "https://registry.npm.taobao.org/cornerstone-wado-image-loader/download/cornerstone-wado-image-loader-3.3.1.tgz#2d37a4278f087f9ea66b98dd384c3584bd4f202b"
@@ -4778,6 +4803,11 @@ gzip-size@^5.0.0:
   dependencies:
     duplexer "^0.1.1"
     pify "^4.0.1"
+
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.npm.taobao.org/hammerjs/download/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -7805,6 +7835,11 @@ regenerate@^1.4.0:
   version "1.4.2"
   resolved "https://registry.npm.taobao.org/regenerate/download/regenerate-1.4.2.tgz?cache=0&sync_timestamp=1604218526490&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregenerate%2Fdownload%2Fregenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha1-uTRtiCfo9aMve6KWN9OYtpAUhIo=
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+  integrity sha1-+hpxVEdkwDb4xJsToIsllMn4oN4=
 
 regenerator-runtime@^0.13.4:
   version "0.13.7"

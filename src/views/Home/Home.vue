@@ -13,7 +13,7 @@
             </div>
 
             <div class="header-item">
-
+                <ToolBlock />
             </div>
         </div>
 

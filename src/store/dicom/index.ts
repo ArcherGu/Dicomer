@@ -8,11 +8,15 @@ export const dicomModule: Module<DicomModuleTypes, AllStateTypes> = {
     namespaced: true,
     state: {
         currentId: null,
+        element: null,
         list: []
     },
     mutations: {
         setCurrentId(state, data: string) {
             state.currentId = data;
+        },
+        setElement(state, data: Element) {
+            state.element = data;
         },
         add(state, data: DicomInfo | DicomInfo[]) {
             isArray(data) ? state.list.push(...(data as DicomInfo[])) : state.list.push((data as DicomInfo));
@@ -28,6 +32,9 @@ export const dicomModule: Module<DicomModuleTypes, AllStateTypes> = {
     getters: {
         currentId(state) {
             return state.currentId;
+        },
+        element(state) {
+            return state.element;
         },
         list(state) {
             return state.list;

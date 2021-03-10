@@ -1,6 +1,6 @@
 import { defineComponent, ref, watch } from "vue";
 import { cornerstone } from "@/plugins/cornerstone";
-import { ImageViewer, OpenBtn, DicomList } from "./components";
+import { ImageViewer, OpenBtn, DicomList, ToolBlock } from "./components";
 import { useStore } from "@/store";
 
 export default defineComponent({
@@ -9,6 +9,7 @@ export default defineComponent({
         DicomList,
         ImageViewer,
         OpenBtn,
+        ToolBlock
     },
     props: {},
     setup(props) {
