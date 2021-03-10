@@ -31,4 +31,4 @@
 </template>
 
 <script lang="ts" src="./DicomList.ts"></script>
-<style lang="less" src="./DicomList.less" ></style>
+<style lang="less" src="./DicomList.less"></style>

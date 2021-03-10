@@ -1,4 +1,4 @@
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
 import { FolderOpenOutlined } from "@ant-design/icons-vue";
 import { cornerstoneWADOImageLoader } from "@/plugins/cornerstone";
 import { useStore } from "@/store";
@@ -20,10 +20,14 @@ export default defineComponent({
             store.commit("dicom/setCurrentId", imageId);
         });
 
+        const dicomList = computed<DicomInfo[]>(() => store.getters["dicom/list"]);
+
         const openFile = (file: File) => {
-            const imageId: string = cornerstoneWADOImageLoader.wadouri.fileManager.add(
-                file
-            );
+            if (dicomList.value.some(e => e.fileName === file.name)) {
+                return false;
+            }
+
+            const imageId: string = cornerstoneWADOImageLoader.wadouri.fileManager.add(file);
 
             const fileIndex = Number(imageId.split(":")[1]);
 

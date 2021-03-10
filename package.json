@@ -28,7 +28,9 @@
         "core-js": "^3.6.5",
         "cornerstone-core": "^2.3.0",
         "cornerstone-wado-image-loader": "^3.3.1",
+        "dayjs": "^1.10.4",
         "dicom-parser": "^1.8.7",
+        "iconv-lite": "^0.6.2",
         "is": "^3.3.0",
         "postcss": "^7",
         "rxjs": "^6.6.6",
@@ -39,6 +41,7 @@
     },
     "devDependencies": {
         "@types/is": "^0.0.21",
+        "@types/node": "^14.14.33",
         "@typescript-eslint/eslint-plugin": "^2.33.0",
         "@typescript-eslint/parser": "^2.33.0",
         "@vue/cli-plugin-babel": "~4.5.0",
