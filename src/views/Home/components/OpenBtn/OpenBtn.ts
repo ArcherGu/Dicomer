@@ -23,7 +23,7 @@ export default defineComponent({
         const dicomList = computed<DicomInfo[]>(() => store.getters["dicom/list"]);
 
         const openFile = (file: File) => {
-            if (dicomList.value.some(e => e.fileName === file.name)) {
+            if (dicomList.value.some(e => e.fileName === file.name) || file.name.indexOf('.dcm') == -1) {
                 return false;
             }
 
