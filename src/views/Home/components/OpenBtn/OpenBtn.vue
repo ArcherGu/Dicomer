@@ -1,18 +1,11 @@
 <template>
     <a-dropdown>
-        <a @click.prevent>
-            <a-upload
-                :before-upload="openFile"
-                :show-upload-list="false"
-            >
-                <a-button
-                    type="link"
-                    class="h-full"
-                >
-                    <FolderOpenOutlined class="text-4xl" />
-                </a-button>
-            </a-upload>
-        </a>
+        <a-button
+            type="link"
+            class="h-full"
+        >
+            <FolderOpenOutlined class="text-4xl" />
+        </a-button>
 
         <template #overlay>
             <a-menu>
